@@ -6,3 +6,31 @@ Thu Aug 20 09:13:41 PM UTC 2026:
  tests:  0|6
 total_score: 0/60
 c824804
+Thu Aug 20 09:18:32 PM UTC 2026: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:38:5: error: unknown type name ‘list’; did you mean ‘List’?
+   38 |     list* lista = malloc(sizeof(list));
+      |     ^~~~
+      |     List
+list.c:38:33: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   38 |     list* lista = malloc(sizeof(list));
+      |                                 ^~~~
+      |                                 List
+list.c:38:33: note: each undeclared identifier is reported only once for each function it appears in
+list.c:39:10: error: request for member ‘head’ in something not a structure or union
+   39 |     lista->head = NULL;
+      |          ^~
+list.c:40:10: error: request for member ‘tail’ in something not a structure or union
+   40 |     lista->tail = NULL;
+      |          ^~
+list.c:41:10: error: request for member ‘current’ in something not a structure or union
+   41 |     lista->current = NULL;
+      |          ^~
+list.c:42:12: error: returning ‘int *’ from a function with incompatible return type ‘List *’ {aka ‘struct List *’} [-Wincompatible-pointer-types]
+   42 |     return lista;
+      |            ^~~~~
+2041498
