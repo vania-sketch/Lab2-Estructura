@@ -120,3 +120,8 @@ list.c:104:17: error: expected expression before ‘Node’
   104 |     nuevoNodo = Node* createNode(data);
       |                 ^~~~
 8524aa8
+Thu Aug 20 09:55:38 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+d56c178
