@@ -172,6 +172,8 @@ void * popCurrent(List * list) {
         list->tail = eliminado->prev;
     }
 
+    list->current = siguiente
+
     
     
     return dato;
