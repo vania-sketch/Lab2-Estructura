@@ -174,7 +174,7 @@ void * popCurrent(List * list) {
 
     
     
-    return NULL;
+    return dato;
 }
 
 void cleanList(List * list) {
