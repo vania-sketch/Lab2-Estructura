@@ -160,22 +160,26 @@ void * popCurrent(List * list) {
     void * dato = eliminado->data;  //guarda el dati
     Node * siguiente = eliminado->next;
 
-    if (eliminado->prev != NULL) {
+    if (eliminado->prev != NULL) 
+    {
         eliminado->prev->next = eliminado->next;
-    } else {
+    }
+    else 
+    {
         list->head = eliminado->next;
     }
 
-    if (eliminado->next != NULL) {
+    if (eliminado->next != NULL) 
+    {
         eliminado->next->prev = eliminado->prev;
-    } else {
+    } 
+    else 
+    {
         list->tail = eliminado->prev;
     }
 
     list->current = siguiente
 
-    
-    
     return dato;
 }
 

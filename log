@@ -269,3 +269,24 @@ list.c:180:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 1958aae
+Sun Aug 23 10:19:20 PM UTC 2026: 
+ list.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:181:30: error: expected ‘;’ before ‘return’
+  181 |     list->current = siguiente
+      |                              ^
+      |                              ;
+  182 | 
+  183 |     return dato;
+      |     ~~~~~~                    
+list.c:160:12: error: unused variable ‘dato’ [-Werror=unused-variable]
+  160 |     void * dato = eliminado->data;  //guarda el dati
+      |            ^~~~
+list.c:184:1: error: control reaches end of non-void function [-Werror=return-type]
+  184 | }
+      | ^
+cc1: all warnings being treated as errors
+219f7de
