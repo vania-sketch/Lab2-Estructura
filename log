@@ -192,3 +192,16 @@ Sun Aug 23 09:07:45 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 a5e566b
+Sun Aug 23 09:51:33 PM UTC 2026: 
+ list.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:133:46: error: expected ‘;’ before ‘}’ token
+  133 |         list->current->next->prev = nuevoNodo
+      |                                              ^
+      |                                              ;
+  134 |     }
+      |     ~                                         
+2a7e473
