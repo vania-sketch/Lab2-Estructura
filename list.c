@@ -158,7 +158,7 @@ void * popCurrent(List * list) {
 
     Node * eliminado = list->current; //guarda el nodo entero
     void * dato = eliminado->data;  //guarda el dati
-    Node * siguiente = eliminado->next;
+    Node * siguiente = eliminado->next; //para apuntar al nodo siguiente al final
 
     if (eliminado->prev != NULL) 
     {
